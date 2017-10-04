@@ -2,58 +2,222 @@
 <html>
   <head>
     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/styles.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <!-- Logo section -->
-      <div class="logo">
 
-        <span>COLMAR ACADEMY</span>
+
+      <!-- Header Section -->
+      <header>
+
+        <!-- Desktop Navigation Section -->
+        <nav class="flex-container">
+          <!-- Logo section -->
+          <div class="logo flex-container">
+            <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo">
+            <span id="colmar">COLMAR</span> <span id="academy">ACADEMY</span>
+
+          </div>
+          <ul class="flex-container desktop-navigation">
+            <li>On Campus</li>
+            <li>Online</li>
+            <li>For Companies</li>
+            <li>Sign In</li>
+          </ul>
+
+        <!-- Mobile Navigation Section -->
+
+          <ul class="mobile-navigation">
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+          </ul>
+        </nav>
+      </header>
+<div id="main-container">
+      <!-- Banner Secton -->
+      <section id="banner"class="flex-container">
+        <div class="media">
+          <img src="resources/images/banner.jpg" alt="">
+        </div>
+        <div class="content flex-container">
+          <h1>Learn something new everyday</h1>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <div class="button">Start here</div>
+        </div>
+      </section>
+
+      <!-- Events Section  -->
+      <section id="events" class="flex-container">
+        <!-- The large 60% section on the left -->
+        <div class="media flex-container">
+          <img src="resources/images/information-main.jpg" alt="Man reading book">
+          <h2>It doesn't hurt to keep practicing</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <p>
+            Emanual, Sr Strategist at Hiring.com
+          </p>
+        </div>
+
+        <div class="cards">
+
+          <div class="card">
+            <div class="card-media">
+              <img src="resources/images/information-orientation.jpg" alt="People and Shadows">
+            </div>
+            <div class="card-media-mobile">
+              <img src="resources/images/information-orientation-mobile.jpg" alt="People and Shadows">
+            </div>
+            <div class="card-content">
+              <h3>Orientation Date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am - 3p,</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-media">
+              <img src="resources/images/information-campus.jpg" alt="Picture of a campus location">
+            </div>
+            <div class="card-media-mobile">
+              <img src="resources/images/information-campus-mobile.jpg" alt="Picture of a campus location">
+            </div>
+            <div class="card-content">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-media">
+              <img src="resources/images/information-guest-lecture.jpg" alt="Image of Oliver Sack">
+            </div>
+            <div class="card-media-mobile">
+              <img src="resources/images/information-guest-lecture-mobile.jpg" alt="Image of Oliver Sack">
+            </div>
+            <div class="card-content">
+              <h3>Our guest lecture</h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Classes Section -->
+      <section id="learning flex-container">
+        <h2>Start learning</h2>
+        <div id="classes">
+
+          <div class="class">
+            <img src="resources/images/course-software.jpg" alt="Image of desk with monitors">
+            <h3>Software engneering</h3>
+            <p>COURSES</p>
+            <p>Web Development, Mobile Development, iOT, API's</p>
+          </div>
+
+          <div class="class">
+            <img src="resources/images/course-computer-art.jpg" alt="Image of mobile phone">
+            <h3>Computer art</h3>
+            <p>COURSES</p>
+            <p>Image & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </div>
+
+          <div class="class">
+            <img src="resources/images/course-design.jpg" alt="Image of person with camera">
+            <h3>Design</h3>
+            <p>COURSES</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+
+          <div class="class">
+            <img src="resources/images/course-data.jpg" alt="Image of laptop">
+            <h3>Data</h3>
+            <p>COURSES</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+
+          <div class="class">
+            <img src="resources/images/course-business.jpg" alt="Image of chess pieces">
+            <h3>Business</h3>
+            <p>COURSES</p>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+
+          <div class="class">
+            <img src="resources/images/course-marketing.jpg" alt="Image of desk with monitors">
+            <h3>Marketing</h3>
+            <p>COURSES</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
+
+        </div>
+
+        <div id="classes-mobile">
+          <h3>Software engneering</h3>
+          <h3>Computer art</h3>
+          <h3>Design</h3>
+          <h3>Data</h3>
+          <h3>Business</h3>
+          <h3>Marketing</h3>
+        </div>
+
+      </section>
+      <!-- Exhibits Section -->
+      <h2>Thesis exhibit</h2>
+      <div id="exhibits" class="flex-container">
+        <div class="media">
+          <video controls   >
+            <source src="resources/videos/thesis.mp4" type="video/mp4">
+          </video>
+          <h3>Reimagine urban</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
+        <div class="cards">
+
+          <div class="card">
+            <div class="card-media">
+              <img src="resources/images/thesis-fisma.jpg" alt="Image of Design documnetation">
+            </div>
+            <div class="card-content">
+              <h3>Fisma: Design and Protype</h3>
+              <p>Designer showcase of new protype product</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-media">
+              <img src="resources/images/thesis-now-and-then.jpg" alt="Image of New York">
+            </div>
+            <div class="card-content">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+
+        </div>
 
       </div>
-
-      <!-- Desktop Navigation Section -->
-      <nav class="desktop-navigation">
-        <ul>
-          <li>On Campus</li>
-          <li>Online</li>
-          <li>For Companies</li>
-          <li>Sign In</li>
-        </ul>
-      </nav>
-
-
-      <!-- Mobile Navigation Section -->
-      <nav class="mobile-navigation">
-        <ul>
-          <li></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Banner Secton -->
-    <div class="Banner">
-
+      <!-- Footer Section -->
+      <footer>
+        <small>&copy; Copyright 2058, Example Corporation</small>
+      </footer>
     </div>
-
-    <!-- Events Section  -->
-    <div class="Events">
-
-    </div>
-
-    <!-- Classes Section -->
-    <div class="Classes">
-
-    </div>
-    <!-- Exhibits Section -->
-    <div class="Exhibits">
-
-    </div>
-    <!-- Footer Section -->
-    <footer>
-
-    </footer>
   </body>
 </html>

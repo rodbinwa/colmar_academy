@@ -1,0 +1,124 @@
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #4B4B4B;
+}
+
+#main-container, nav{
+  max-width: 960px;
+  margin: 0 auto;
+}
+#banner, #events, #exhibits {
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.flex-container  {
+  display: flex;
+  border: 1px solid red;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.media {
+  width: 60%;
+
+}
+
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+.card-media-mobile, .mobile-navigation {
+  display: none;
+}
+
+#main-container section:nth-child(odd){
+  background-color: #DADADA;
+}
+/* ----- Header Styles ----- */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+  padding-right: 1.5rem;
+}
+
+.desktop-navigation li {
+  margin-left: 1rem;
+}
+
+.logo {
+  align-items: center;
+}
+.logo img {
+  height: 2rem;
+  padding-left: 1.5rem
+}
+
+#colmar {
+  font-weight: 700;
+}
+
+#academy {
+  font-weight: 300;
+}
+
+nav li:hover {
+  font-weight: 700;
+}
+/* ----- Banner Section ----- */
+#banner {
+  padding-top: 6rem;
+}
+
+#banner .content {
+  max-width:30%;
+  padding-left: 1.5rem;
+  padding-right: 4rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#banner .button {
+  text-align: center;
+  background-color: #4b4b4b;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+#banner .button:hover {
+  background-color: black;
+}
+/* -----Events Section ----- */
+
+
+#events a {
+  color: #7892E0;
+}
