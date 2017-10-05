@@ -3,7 +3,9 @@ html {
   font-family: 'Roboto', sans-serif;
   color: #4B4B4B;
 }
-
+#main-container {
+  border: 1px solid #ADADB0;
+}
 #main-container, nav{
   max-width: 960px;
   margin: 0 auto;
@@ -14,11 +16,16 @@ html {
 
 .flex-container  {
   display: flex;
-  border: 1px solid red;
+
 }
 
 h1 {
   font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
@@ -27,9 +34,19 @@ h3 {
   font-weight: 700;
 }
 
+p {
+ font-size: 0.8rem;
+   line-height: 1.25rem;
+ }
+
+.section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .media {
   width: 60%;
-
+  padding-right: 0.5rem;
 }
 
 .media img {
@@ -37,12 +54,12 @@ h3 {
   height: auto;
 }
 
-.card-media-mobile, .mobile-navigation {
+.card-media-mobile, .mobile-navigation, .classes-mobile {
   display: none;
 }
 
 #main-container section:nth-child(odd){
-  background-color: #DADADA;
+  background-color: #EAEAEB;
 }
 /* ----- Header Styles ----- */
 header {
@@ -55,9 +72,9 @@ header {
 }
 
 nav{
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 nav ul {
@@ -116,9 +133,81 @@ nav li:hover {
 #banner .button:hover {
   background-color: black;
 }
-/* -----Events Section ----- */
+/* -----Announcements Section ----- */
+#events h2 {
+  padding-top: 2rem;
+}
+#events .quote {
+  padding: 1.5rem 0;
 
+}
+#events .quotee {
+  font-size: 0.75rem;
+}
+
+#events .media {
+  flex-direction: column;
+}
 
 #events a {
+  font-size: 0.8rem;
   color: #7892E0;
+}
+
+.cards {
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.card-media  {
+  max-width: 35%;
+  margin: 1rem;
+}
+
+.card-media img {
+  width: 100%
+}
+
+.card {
+  align-items: center;
+}
+
+.card p {
+  padding: 0.5rem 0;
+}
+
+.cards .card:nth-child(3){
+  background-color: #DADADA;
+}
+
+  /* -----Classes Section ----- */
+#learning {
+  padding: 2rem 3.5rem;
+}
+
+#classes {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.class {
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 29.3%;
+  align-items: stretch;
+}
+
+.class img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-details {
+  background-color: white;
+  padding: 1rem;
+  height: 100%;
+}
+.course-details p {
+  color: #ACACAC;
+  margin-top: 0.5rem;
 }
