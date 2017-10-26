@@ -2,10 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Colmar Academy</title>
+
+    <!-- Font Links -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
+    <!-- Style Sheets -->
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/styles.css" type="text/css" rel="stylesheet">
   </head>
@@ -13,37 +16,41 @@
 
 
       <!-- Header Section -->
-      <header>
+    <header>
 
-        <!-- Desktop Navigation Section -->
-        <nav class="flex-container">
-          <!-- Logo section -->
-          <div class="logo flex-container">
-            <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo">
-            <span id="colmar">COLMAR</span> <span id="academy">ACADEMY</span>
+      <!-- Desktop Navigation Section -->
+      <nav class="flex-container">
+        <!-- Logo section -->
+        <div class="logo flex-container">
+          <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo">
+          <span id="colmar">COLMAR</span> <span id="academy">ACADEMY</span>
 
-          </div>
-          <ul class="flex-container desktop-navigation">
-            <li>On Campus</li>
-            <li>Online</li>
-            <li>For Companies</li>
-            <li>Sign In</li>
-          </ul>
+        </div>
+        <ul class="flex-container desktop-navigation">
+          <a href="#"><li>On Campus</li></a>
+          <a href="#"><li>Online</li></a>
+          <a href="#"><li>For Companies</li></a>
+          <a href="#"><li>Sign In</li></a>
+        </ul>
 
-        <!-- Mobile Navigation Section -->
+      <!-- Mobile Navigation Section -->
 
-          <ul class="mobile-navigation">
-            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
-          </ul>
-        </nav>
-      </header>
-<div id="main-container">
+        <ul class="mobile-navigation flex-container">
+          <li><a href="#"><img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <!-- Main container section  -->
+    <div id="main-container">
       <!-- Banner Secton -->
       <section id="banner"class="flex-container">
         <div class="media">
           <img src="resources/images/banner.jpg" alt="">
+
         </div>
         <div class="content flex-container">
           <h1>Learn something new everyday</h1>
@@ -52,11 +59,12 @@
         </div>
       </section>
 
-      <!-- Announcements Section  -->
-      <section id="events" class="flex-container">
+    <!-- Announcements Section  -->
+      <section id="announcements" class="flex-container">
         <!-- The large 60% section on the left -->
         <div class="media flex-container">
-          <img src="resources/images/information-main.jpg" alt="Man reading book">
+        <img src="resources/images/information-main.jpg" alt="Man reading book">
+
           <h2>It doesn't hurt to keep practicing</h2>
           <p class="quote">
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -71,7 +79,7 @@
 
           <div class="card flex-container">
             <div class="card-media">
-              <img src="resources/images/information-orientation.jpg" alt="People and Shadows">
+            <img src="resources/images/information-orientation.jpg" alt="People and Shadows">
             </div>
             <div class="card-media-mobile">
               <img src="resources/images/information-orientation-mobile.jpg" alt="People and Shadows">
@@ -90,7 +98,7 @@
             <div class="card-media-mobile">
               <img src="resources/images/information-campus-mobile.jpg" alt="Picture of a campus location">
             </div>
-            <div class="card-content">
+            <div class="card-content ">
               <h3>Our campus</h3>
               <p>Find which campus is close by you</p>
               <a href="#">Read more</a>
@@ -115,12 +123,12 @@
 
       </section>
 
-      <!-- Classes Section -->
+      <!-- Courses Section -->
       <section id="learning" >
         <h2 class="section-title">Start learning</h2>
-        <div id="classes" class="flex-container">
+        <div id="courses" class="flex-container">
 
-          <div class="class flex-container">
+          <div class="course flex-container">
             <img src="resources/images/course-software.jpg" alt="Image of desk with monitors">
             <div class="course-details">
               <h3>Software engneering</h3>
@@ -129,7 +137,7 @@
             </div>
           </div>
 
-          <div class="class flex-container">
+          <div class="course flex-container">
             <img src="resources/images/course-computer-art.jpg" alt="Image of mobile phone">
             <div class="course-details">
               <h3>Computer art</h3>
@@ -138,7 +146,7 @@
             </div>
           </div>
 
-          <div class="class flex-container">
+          <div class="course flex-container">
             <img src="resources/images/course-design.jpg" alt="Image of person with camera">
             <div class="course-details">
               <h3>Design</h3>
@@ -147,7 +155,7 @@
             </div>
           </div>
 
-          <div class="class flex-container">
+          <div class="course flex-container">
             <img src="resources/images/course-data.jpg" alt="Image of laptop">
             <div class="course-details">
               <h3>Data</h3>
@@ -156,7 +164,7 @@
             </div>
           </div>
 
-          <div class="class flex-container">
+          <div class="course flex-container">
             <img src="resources/images/course-business.jpg" alt="Image of chess pieces">
             <div class="course-details">
               <h3>Business</h3>
@@ -165,7 +173,7 @@
           </div>
           </div>
 
-          <div class="class flex-container">
+          <div class="course desktop flex-container">
             <img src="resources/images/course-marketing.jpg" alt="Image of desk with monitors">
             <div class="course-details">
               <h3>Marketing</h3>
@@ -176,58 +184,67 @@
 
         </div>
 
-        <div class="classes-mobile">
-          <h3>Software engneering</h3>
-          <h3>Computer art</h3>
-          <h3>Design</h3>
-          <h3>Data</h3>
-          <h3>Business</h3>
-          <h3>Marketing</h3>
-        </div>
+        <ul class="courses-mobile">
+          <a href="#"><li>Software engneering</li></a>
+          <a href="#"><li>Computer art</li></a>
+          <a href="#"><li>Design</li></a>
+          <a href="#"><li>Data</li></a>
+          <a href="#"><li>Business</li></a>
+          <a href="#"><li>Marketing</li></a>
+        </ul>
 
-      </section>
+      </section >
       <!-- Exhibits Section -->
-      <h2 class="section-title">Thesis exhibit</h2>
-      <div id="exhibits" class="flex-container">
-        <div class="media">
-          <video controls   >
-            <source src="resources/videos/thesis.mp4" type="video/mp4">
-          </video>
-          <h3>Reimagine urban</h3>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          </p>
-        </div>
-        <div class="cards">
-
-          <div class="card">
-            <div class="card-media">
-              <img src="resources/images/thesis-fisma.jpg" alt="Image of Design documnetation">
-            </div>
-            <div class="card-content">
-              <h3>Fisma: Design and Protype</h3>
-              <p>Designer showcase of new protype product</p>
-            </div>
+      <section id="exhibits" >
+        <h2 class="section-title">Thesis exhibit</h2>
+        <div id="exhibits-container" class="flex-container">
+          <div class="media">
+            <video width=100% controls   >
+              <source src="resources/videos/thesis.mp4" type="video/mp4">
+            </video>
+            <h3>Reimagine urban</h3>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            </p>
           </div>
 
-          <div class="card">
-            <div class="card-media">
-              <img src="resources/images/thesis-now-and-then.jpg" alt="Image of New York">
+          <div class="cards flex-container">
+
+            <div class="card flex-container">
+              <div class="card-media">
+                <img src="resources/images/thesis-fisma.jpg" alt="Image of Design documnetation">
+              </div>
+              <div class="card-content ">
+                <h3>Fisma: Design and Protype</h3>
+                <p>Designer showcase of new protype product</p>
+              </div>
             </div>
-            <div class="card-content">
-              <h3>Now and then</h3>
-              <p>Research study about New York</p>
+
+            <div class="card flex-container">
+              <div class="card-media">
+                <img src="resources/images/thesis-now-and-then.jpg" alt="Image of New York">
+              </div>
+              <div class="card-content ">
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
+              </div>
             </div>
+
           </div>
 
         </div>
+      </section>
 
-      </div>
       <!-- Footer Section -->
-      <footer>
-        <small>&copy; Copyright 2058, Example Corporation</small>
+      <footer class="flex-container">
+        &copy; 2016 Colmar Academy.  All rights reserved
+        <ul class="flex-container footer-desktop">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
       </footer>
-    </div>
+
+    </div> <-- Main
   </body>
 </html>

@@ -5,18 +5,15 @@ html {
 }
 #main-container {
   border: 1px solid #ADADB0;
+
 }
 #main-container, nav{
   max-width: 960px;
   margin: 0 auto;
 }
-#banner, #events, #exhibits {
-  padding: 2rem 0 2rem 1.5rem;
-}
 
 .flex-container  {
   display: flex;
-
 }
 
 h1 {
@@ -29,13 +26,13 @@ h2 {
   font-weight: 700;
 }
 
-h3 {
+h3, .courses-mobile li{
   font-size: 1.25rem;
   font-weight: 700;
 }
 
 p {
- font-size: 0.8rem;
+  font-size: 0.8rem;
    line-height: 1.25rem;
  }
 
@@ -45,8 +42,8 @@ p {
 }
 
 .media {
-  width: 60%;
-  padding-right: 0.5rem;
+  padding-right: 1.5rem;
+  flex-basis: 60%;
 }
 
 .media img {
@@ -54,13 +51,116 @@ p {
   height: auto;
 }
 
-.card-media-mobile, .mobile-navigation, .classes-mobile {
+/* ----- Media Query for full sized screen ----- */
+@media only screen and (min-width: 600px){
+  .card-media-mobile, .mobile-navigation, .courses-mobile {
   display: none;
+  }
+
+  #banner, #announcements, #exhibits {
+   padding: 2rem 0 2rem 1.5rem;
+  }
+
+  #banner {
+    padding-top: 6rem; /* To get the banner out from under the nav ---- */
+  }
+
+  #banner .content {
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 40%;
+    margin-right: 4rem; /* So the button and text  has the correct spacing as per the spec */
+  }
+
+  .cards {
+    flex-basis: 40%;
+  }
+
+  .card {
+    align-items: center;
+  }
+
+  #main-container section:nth-child(odd){
+    background-color: #DADADA;
+  }
+
+  .card-content{
+    flex-basis: 65%;
+  }
+
+  #announcements .cards .card:nth-child(3){
+    background-color: #DADADA;
+  }
+
+  #learning {
+    padding: 2rem 3.5rem;
+  }
+}
+/* ----- Media Query for small screen below 600 pixels ----- */
+@media only screen and (max-width: 599px){
+
+   .desktop-navigation, #courses, #colmar, #academy, .logo,
+   #announcements .media, .card-media, #exhibits .cards, #exhibits-container h3,
+   #exhibits-container p, .footer-desktop{
+  display: none;
+  }
+
+  #banner {
+    flex-direction: column;
+    padding: 0;
+    background-color: #DADADA;
+  }
+
+  #banner .content {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom:  2rem;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .media {
+    flex-basis: 100%;
+    padding: 4rem 0 2rem 0;
+  }
+
+  #announcements{
+    margin: 1rem;
+  }
+
+  .cards {
+    flex-basis: 100%;
+  }
+
+  .card-media-mobile  {
+    flex-basis: 100%;
+  }
+
+  .card-media-mobile img {
+    max-width:100%;
+    height: auto;
+  }
+
+  .card-content{
+    width: 100%;
+    margin: 2rem 1rem;
+  }
+
+  #learning {
+    padding: 2rem 1rem;
+  }
+
+  #exhibits .media {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
 }
 
-#main-container section:nth-child(odd){
-  background-color: #EAEAEB;
-}
 /* ----- Header Styles ----- */
 header {
   position: fixed;
@@ -81,8 +181,12 @@ nav ul {
   padding-right: 1.5rem;
 }
 
-.desktop-navigation li {
+nav li {
   margin-left: 1rem;
+}
+.mobile-navigation{
+  width: 100%;
+  justify-content: space-between;
 }
 
 .logo {
@@ -104,19 +208,12 @@ nav ul {
 nav li:hover {
   font-weight: 700;
 }
+
+nav li {
+  transition: all 250ms linear;
+}
+
 /* ----- Banner Section ----- */
-#banner {
-  padding-top: 6rem;
-}
-
-#banner .content {
-  max-width:30%;
-  padding-left: 1.5rem;
-  padding-right: 4rem;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #banner h3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -133,71 +230,68 @@ nav li:hover {
 #banner .button:hover {
   background-color: black;
 }
+
+#banner .button {
+  transition: all 250ms ease-in;
+}
 /* -----Announcements Section ----- */
-#events h2 {
+#announcements h2 {
   padding-top: 2rem;
 }
-#events .quote {
+#announcements .quote {
   padding: 1.5rem 0;
 
 }
-#events .quotee {
+#announcements .quotee {
   font-size: 0.75rem;
 }
 
-#events .media {
+#announcements .media {
   flex-direction: column;
 }
 
-#events a {
+#announcements a {
   font-size: 0.8rem;
   color: #7892E0;
 }
 
 .cards {
   flex-direction: column;
-  max-width: 40%;
 }
 
 .card-media  {
-  max-width: 35%;
-  margin: 1rem;
+  flex-basis: 35%;
+  padding: 1rem;
 }
 
 .card-media img {
-  width: 100%
-}
-
-.card {
-  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .card p {
   padding: 0.5rem 0;
 }
 
-.cards .card:nth-child(3){
-  background-color: #DADADA;
+#announcements a:hover {
+    font-weight: 700;
 }
 
-  /* -----Classes Section ----- */
-#learning {
-  padding: 2rem 3.5rem;
-}
-
-#classes {
+  /* -----Courses Section ----- */
+#courses {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
-.class {
+.course {
   flex-direction: column;
   padding: 1rem;
-  max-width: 29.3%;
+  min-width: 29%;
   align-items: stretch;
+  flex: 1;
 }
 
-.class img {
+.course img {
   max-width: 100%;
   height: auto;
 }
@@ -207,7 +301,49 @@ nav li:hover {
   padding: 1rem;
   height: 100%;
 }
+
 .course-details p {
   color: #ACACAC;
   margin-top: 0.5rem;
 }
+
+#courses .course-details:hover  {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#courses .course-details {
+  transition: all 250ms ease-in;
+}
+
+.courses-mobile li {
+  background-color: #DADADA;
+  padding: 1rem 1rem 1.5rem 1rem; /* per spec */
+  margin-bottom: 0.5rem;
+  transition: all 250ms ease-in;
+}
+
+.courses-mobile li:hover {
+  background-color: black;
+  color: white;
+}
+
+/* -----Exhibits Section ----- */
+#exhibits-container .cards .card:first-child {
+  background-color: #DADADA;
+}
+
+/* ----- Footer Section ----- */
+footer{
+  font-size: smaller;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
+}
+
+footer li {
+  margin-right: 1rem;
+}
+
+footer li:hover {
+  font-weight: 700;
